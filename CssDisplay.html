@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.container{
+    width:620px;
+    height:300px;
+    background-color:blue;
+    position:relative;
+
+}
+.box{
+    display: inline-block;
+    width:200px;
+    height:200px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+.relative-box{
+    background-color:red;
+    position:relative;
+    left: 20px;
+    top:20px;
+}
+.absolute-box{
+    background-color:orange;
+    position:absolute;
+    left:20px;
+    top:20px;
+}
+.floatbox{
+    background-color:green;
+    width:100px;
+    height:98px;
+    border:1px solid black;
+}
+.float-right-box{
+    float:right;
+}
+</style>
+<body>
+    <h1>Relative Position</h1>
+
+    <div class="container">
+        <div class="box" style="background-size:cover; background-image: url(https://www.shutterstock.com/image-photo/british-shorthair-kitten-silver-color-260nw-1510641710.jpg);">Box 1</div>
+        <div class="box" style="background-size:cover; background-image: url(https://www.shutterstock.com/image-photo/british-shorthair-kitten-silver-color-260nw-1510641710.jpg);">Box 2</div>
+        <div class="box" style="background-size: cover; background-image: url('https://img.republicworld.com/republic-prod/stories/promolarge/xhdpi/zhkmqolt1ity7wrb_1652425417.jpeg');">Box 3</div>
+
+    </div>
+    <h1>Absolute Position</h1>
+
+    <div class="container">
+        <div class="box" style="background-size:cover; background-image: url(https://www.shutterstock.com/image-photo/british-shorthair-kitten-silver-color-260nw-1510641710.jpg);">Box 1</div>
+        <div class="box absolute-box" style="background-size:cover; background-image: url(https://www.shutterstock.com/image-photo/british-shorthair-kitten-silver-color-260nw-1510641710.jpg);">Box 2</div>
+        <div class="box"style="background-size: cover; background-image: url('https://img.republicworld.com/republic-prod/stories/promolarge/xhdpi/zhkmqolt1ity7wrb_1652425417.jpeg');">Box 3</div>
+        
+
+        </div>
+
+        <h1>Float</h1>
+        <div class="container">
+            
+            <div class=" floatbox float-right-box"style="background-size:cover; background-image: url(https://www.shutterstock.com/image-photo/british-shorthair-kitten-silver-color-260nw-1510641710.jpg);">Box 1</div>
+            
+            <div class="floatbox" style="background-size:cover; background-image: url(https://www.shutterstock.com/image-photo/british-shorthair-kitten-silver-color-260nw-1510641710.jpg);">Box 2</div>
+            
+            <div class="floatbox"style="background-size: cover; background-image: url('https://img.republicworld.com/republic-prod/stories/promolarge/xhdpi/zhkmqolt1ity7wrb_1652425417.jpeg');">Box 3</div>
+            
+    
+    </div>
+</body>
+</html>
